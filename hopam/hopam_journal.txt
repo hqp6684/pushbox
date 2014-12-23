@@ -1,2 +1,6 @@
 
 Hopam journal
+config/routes.rb
+	root :to => "home#index"
+tells Rails to map the root action to the home
+controller index's action
