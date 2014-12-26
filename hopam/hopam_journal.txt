@@ -8,4 +8,11 @@ controller index's action
 	git branch branch_name to create a new branch
 	git checkout branch_name to swtich branch
 	**remember to generate/add new ssh to github
+	git checkout will automatically change code
+	
+	git merge branch_name to merge 
+	
+	pull to merge remote repostory with current code
+	pull to syn/get latest changes
+	git pull remote_name branch
 
