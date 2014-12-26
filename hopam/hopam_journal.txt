@@ -4,3 +4,8 @@ config/routes.rb
 	root :to => "home#index"
 tells Rails to map the root action to the home
 controller index's action
+	
+	git branch branch_name to create a new branch
+	git checkout branch_name to swtich branch
+	**remember to generate/add new ssh to github
+
