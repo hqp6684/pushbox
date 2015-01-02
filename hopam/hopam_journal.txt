@@ -16,3 +16,44 @@ controller index's action
 	pull to syn/get latest changes
 	git pull remote_name branch
 
+RAILS-
+	controller is to receive specific requests for the app
+	routeing decides which controller receives which requests
+	There is often more than one route to each controller
+	Different routes can be served by different actions
+	Each action is to collect information to provide to view
+	View is to display data
+
+	to create new controller
+		rails generate controller name action
+	
+	to route to the root -> edit routes.rb
+
+A resource is the term used for a collection of similar objects
+**You need to add the resouce to the routes.rb
+	example: resouces :articles
+
+	render hash -> create a page
+	example:
+	def create
+		render plain: params[:article].inspect
+	end
+		render method takes in hash key of plain with 
+		params[:article].inspect
+
+by default, ruby works in the development environment. 
+So, when migrate, it will change the development database in config/databse
+If want to execute migrations in production or other environment, must be
+explicitly pass it when invoking migrate 
+	example : rake db:migrate RAILS_ENV=production
+
+Strong parameters, 
+	@article = Article.new(params.require(:article).permit(:title,:text)
+CRUD actions in each controller: index, show, new, edit, create, update, destroy
+CRUD actions are public, and need to be placed before any private or protected methods in the controller
+
+	link_to recepes
+	linkt_to 'name' action_controller_path
+<%= link_to 'Back', articles_path %>
+<%= link_to 'Back', new_article_path %>
+

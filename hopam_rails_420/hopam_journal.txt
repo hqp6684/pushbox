@@ -15,4 +15,8 @@ controller index's action
 	pull to merge remote repostory with current code
 	pull to syn/get latest changes
 	git pull remote_name branch
+Rails Guide 4.2
+	8.1 Deleting Associated Objects
+	has_many :comments, dependent: :destroy
+:x
 
